@@ -1,0 +1,94 @@
+.box {
+	position: absolute;
+	width:100%;
+	height:42px;
+	top: 40%;
+	background: #F2EDED;
+}
+
+.intro {
+	left: 20%;
+	position: absolute;
+	top: 38.5%;
+	z-index: 10;
+	font-family: 'Bentham', serif;
+}
+
+.name {
+	position: relative;
+	left: 2px;
+	font-size: 60px;
+}
+
+.line {
+	position: relative;
+	top: -10px;
+	left: -20px;
+	width: 820px;
+	border: 0;
+	height: 0.5px;
+	background-color: black;
+}
+
+.list {
+	position: relative;
+	top: -20px;
+	font-size: 25px;
+}
+
+.header {
+	color: gray;
+	font-family: 'Bentham', serif;
+	position: absolute;
+	top: 27px;
+	width: 100%;
+}
+
+.dots {
+	cursor: default;
+	position: relative;
+	top: -30px;
+	left: 40px;
+	font-size: 25px;
+}
+
+.dots:hover ~ .more {
+	color: grey;
+}
+
+.more {
+	cursor: default;
+	color: white;
+	position: relative;
+	top: -30px;
+	left: 40px;
+}
+
+#home {
+	left: 50px;
+	position: absolute;
+	z-index: 20;
+}
+
+#contact {
+	right: 50px;
+	position: relative;
+	text-align: right;
+}
+
+a {
+	color: inherit;
+	text-decoration: none
+}
+
+.links {
+	font-family: 'Bentham', serif;
+	text-decoration: none;
+	color: inherit;
+}
+
+.links:hover {
+	color: gray;
+}
+
+
