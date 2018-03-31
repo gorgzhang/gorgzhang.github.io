@@ -1,0 +1,87 @@
+.box {
+	position: absolute;
+	width:100%;
+	height:42px;
+	top: 40%;
+	background: #F2EDED;
+}
+
+.intro {
+	left: 20%;
+	position: absolute;
+	top: 38.5%;
+	z-index: 10;
+	font-family: 'Bentham', serif;
+}
+
+.hey {
+	font-style: italic;
+	font-size: 25px;
+}
+
+.name {
+	position: relative;
+	left: 2px;
+	font-size: 60px;
+}
+
+.line {
+	position: relative;
+	top: -10px;
+	left: -20px;
+	width: 820px;
+	border: 0;
+	height: 0.5px;
+	background-color: black;
+}
+
+.body {
+	position: relative;
+	left: 27px;
+	width: 673px;
+	font-size: 25px;
+}
+
+.header {
+	color: gray;
+	font-family: 'Bentham', serif;
+	position: absolute;
+	top: 27px;
+	width: 100%;
+}
+
+#home {
+	left: 50px;
+	position: absolute;
+	z-index: 20;
+}
+
+#contact {
+	right: 50px;
+	position: relative;
+	text-align: right;
+}
+
+
+#arrow {
+	position: relative;
+	top: 3px;
+	left: 10px;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.links {
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+}
+
+.links:hover {
+	color: gray;
+}
+
+

@@ -1,84 +1,84 @@
 var cities = {
-  Europe: {
+  "Europe": {
     // switz
-    Zurich: { lat: 47.376887, lng: 8.541694 },
-    Geneva: { lat: 46.204391, lng: 6.143158 },
-    Luzern: { lat: 47.050168, lng: 8.309307 },
+    "Zurich": { lat: 47.376887, lng: 8.541694 },
+    "Geneva": { lat: 46.204391, lng: 6.143158 },
+    "Luzern": { lat: 47.050168, lng: 8.309307 },
 
     // italy
-    Milan: { lat: 45.464204, lng: 9.189982 },
-    Rome: { lat: 41.902783, lng: 12.496366 },
-    Genoa: { lat: 44.40565, lng: 8.946256 },
-    Torino: { lat: 45.070312, lng: 7.686856 },
-    Venice: { lat: 45.440847, lng: 12.315515 },
+    "Milan": { lat: 45.464204, lng: 9.189982 },
+    "Rome": { lat: 41.902783, lng: 12.496366 },
+    "Genoa": { lat: 44.40565, lng: 8.946256 },
+    "Torino": { lat: 45.070312, lng: 7.686856 },
+    "Venice": { lat: 45.440847, lng: 12.315515 },
 
     // england
-    London: { lat: 51.507351, lng: -0.127758 },
+    "London": { lat: 51.507351, lng: -0.127758 },
 
     // ireland
-    Dublin: { lat: 53.349805, lng: -6.26031 },
+    "Dublin": { lat: 53.349805, lng: -6.26031 },
 
     // germany
-    Berlin: { lat: 52.520007, lng: 13.404954 },
-    Köln: { lat: 50.937531, lng: 6.960279 },
+    "Berlin": { lat: 52.520007, lng: 13.404954 },
+    "Cologne": { lat: 50.937531, lng: 6.960279 },
 
     // france
-    Paris: { lat: 48.856614, lng: 2.352222 },
-    Nice: { lat: 43.710173, lng: 7.261953 }
+    "Paris": { lat: 48.856614, lng: 2.352222 },
+    "Nice": { lat: 43.710173, lng: 7.261953 }
   },
 
-  Asia: {
+  "Asia": {
     // japan
-    Tokyo: { lat: 35.689487, lng: 139.691706 },
+    "Tokyo": { lat: 35.689487, lng: 139.691706 },
 
     // china
     "Hong Kong": { lat: 22.396428, lng: 114.109497 },
-    Huangshan: { lat: 29.714699, lng: 118.337521 },
-    Chengdu: { lat: 30.572815, lng: 104.066801 },
-    Dujiangyan: { lat: 31.005165, lng: 103.607531 },
-    Beijing: { lat: 39.9042, lng: 116.407396 },
-    Shanghai: { lat: 31.23039, lng: 121.473702 },
-    Hangzhou: { lat: 30.274084, lng: 120.15507 },
-    Qingdao: { lat: 36.067108, lng: 120.382609 },
-    Shantou: { lat: 23.354091, lng: 116.681972 }
+    "Huangshan": { lat: 29.714699, lng: 118.337521 },
+    "Chengdu": { lat: 30.572815, lng: 104.066801 },
+    "Dujiangyan": { lat: 31.005165, lng: 103.607531 },
+    "Beijing": { lat: 39.9042, lng: 116.407396 },
+    "Shanghai": { lat: 31.23039, lng: 121.473702 },
+    "Hangzhou": { lat: 30.274084, lng: 120.15507 },
+    "Qingdao": { lat: 36.067108, lng: 120.382609 },
+    "Shantou": { lat: 23.354091, lng: 116.681972 }
   },
 
-  Australia: {
-    Cairns: { lat: -16.918551, lng: 145.778055 },
-    Sydney: { lat: -33.86882, lng: 151.209296 },
-    Melbourne: { lat: -37.813628, lng: 144.963058 }
+  "Australia": {
+    "Cairns": { lat: -16.918551, lng: 145.778055 },
+    "Sydney": { lat: -33.86882, lng: 151.209296 },
+    "Melbourne": { lat: -37.813628, lng: 144.963058 }
   },
 
   "North America": {
     // usa
-    Minneapolis: { lat: 44.977753, lng: -93.265011 },
+    "Minneapolis": { lat: 44.977753, lng: -93.265011 },
     "St. Paul": { lat: 44.953703, lng: -93.089958 },
     "Las Vegas": { lat: 36.169941, lng: -115.13983 },
     "Los Angeles": { lat: 34.052234, lng: -118.243685 },
     "San Diego": { lat: 32.715738, lng: -117.161084 },
-    Buffalo: { lat: 42.886447, lng: -78.878369 },
+    "Buffalo": { lat: 42.886447, lng: -78.878369 },
     "New York": { lat: 40.712775, lng: -74.005973 },
-    Boston: { lat: 42.360082, lng: -71.05888 },
-    Cambridge: { lat: 42.373616, lng: -71.109734 },
-    Seatle: { lat: 47.606209, lng: -122.332071 },
-    Olympia: { lat: 47.037874, lng: -122.900695 },
-    Redding: { lat: 40.58654, lng: -122.391675 },
+    "Boston": { lat: 42.360082, lng: -71.05888 },
+    "Cambridge": { lat: 42.373616, lng: -71.109734 },
+    "Seatle": { lat: 47.606209, lng: -122.332071 },
+    "Olympia": { lat: 47.037874, lng: -122.900695 },
+    "Redding": { lat: 40.58654, lng: -122.391675 },
 
     // canada
-    Vancouver: { lat: 49.282729, lng: -123.120738 },
-    Kingston: { lat: 44.231172, lng: -76.485954 },
-    Calgary: { lat: 51.048615, lng: -114.070846 },
-    Tornoto: { lat: 43.653226, lng: -79.383184 }
+    "Vancouver": { lat: 49.282729, lng: -123.120738 },
+    "Kingston": { lat: 44.231172, lng: -76.485954 },
+    "Calgary": { lat: 51.048615, lng: -114.070846 },
+    "Tornoto": { lat: 43.653226, lng: -79.383184 }
   }
 };
 
 // markers currently added
 var markers = {
   "North America": [],
-  Europe: [],
-  Asia: [],
-  Australia: [],
-  Africa: [],
+  "Europe": [],
+  "Asia": [],
+  "Australia": [],
+  "Africa": [],
   "South America": []
 };
 
