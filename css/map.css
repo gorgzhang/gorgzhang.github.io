@@ -3,6 +3,12 @@ body {
 	margin: 0;
 }
 
+window.alert {
+	font-family: 'Futura', sans-serif;
+	color: blue;
+
+}
+
 .everything{
 	position: absolute;
 	width: 100%;

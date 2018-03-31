@@ -5,6 +5,7 @@
   <title>Travel Map</title>
   <link rel="stylesheet" type="text/css" href="css/map.css">
   <link href="https://fonts.googleapis.com/css?family=Bentham|Roboto|Playfair+Display" rel="stylesheet">
+  <script src="https://unpkg.com/sweetalert2@7.17.0/dist/sweetalert2.all.js"></script>
 </head>
 
 <body>
@@ -106,10 +107,11 @@
         var marker = marker;
 
         function nested() {
+          console.log(marker.label.text);
           map.setZoom(map.zoom + 6);
-          map.setCenter({ lat: 53.349805, lng: -6.260310 });
+          map.setCenter(marker.getPosition());
         }
-        return nested
+        return nested;
       }
 
       // timeout so not everything drops at once
@@ -131,7 +133,7 @@
         });
 
         markers[country].push(marker)
-        marker.addListener('click', zoomInMarker(marker));
+        google.maps.event.addListener(marker, "click", zoomInMarker(marker));
       }
 
       // add berkeley as base
@@ -169,6 +171,7 @@
 
       // BUTTONS
 
+      // init buttons
       for (var country in markers) {
         // first letter lowercase + 1 to the end for button ID
         var id = country[0].toLowerCase() + country.slice(1, country.length).replace(/ /g, '') + "Button";
@@ -190,7 +193,10 @@
             }
 
             function unvisited(country) {
-              window.alert("Haven't visited " + country + " yet!");
+              swal({
+                text: "Haven't visited " + country + " yet!",
+                width: 300,
+              })
             }
             // check if visited country yet
             if (country === "Africa" || country === "South America") {
@@ -268,12 +274,16 @@
 
     </script>
     <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHZpBlsd7JwN86773LGZdiK4VO2tUt1x0&callback=initMap"></script>
-
     <script async>
-    setTimeout(function() {window.alert("Navigation on the bottom left.");}, 400)
-    
-    </script>
+    setTimeout(function() {
+      swal({
+        text: "Navigation on the bottom left!",
+        width: 300,
+        icon: "info",
+      });
+    }, 400)
 
+    </script>
     <div class="bottom">
       <button type="button" id="all"> All </button>
       <button type="button" id="clear"> Clear </button>
