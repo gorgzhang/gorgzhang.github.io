@@ -1,7 +1,7 @@
 .intro {
-	left: 20%;
+	left: 20.5%;
 	position: absolute;
-	top: 30%;
+	top: 35%;
 	z-index: 10;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 100;
@@ -48,11 +48,11 @@
 }
 
 #plane {
-	left: 60%;
+	left: 65%;
 	top: 70%;
 	position: absolute;
 	width: auto;
-	height: 120px;
+	height: 80px;
 	-webkit-animation: mover 2s infinite  alternate;
 }
 

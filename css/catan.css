@@ -1,33 +1,17 @@
-.box {
-	position: absolute;
-	width:100%;
-	height:42px;
-	top: 40%;
-	background: #F2EDED;
-}
-
 .intro {
 	left: 20%;
 	position: absolute;
-	top: 38.5%;
+	top: 30%;
+	width: 60%;
 	z-index: 10;
-	font-family: 'Bentham', serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
 }
 
 .name {
 	position: relative;
 	left: 2px;
 	font-size: 60px;
-}
-
-.line {
-	position: relative;
-	top: -10px;
-	left: -20px;
-	width: 820px;
-	border: 0;
-	height: 0.5px;
-	background-color: black;
 }
 
 .header {
@@ -39,10 +23,11 @@
 }
 
 .body {
+	text-align:justify;
 	position: absolute;
 	width: 91%;
 	left: 20px;
-	font-size: 23px;
+	font-size: 20.47px;
 }
 
 
