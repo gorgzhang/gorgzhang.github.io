@@ -47,6 +47,7 @@ body {
 
 #vroom {
 	font-family: 'Roboto', sans-serif;
+	background-color: white;
 	cursor: pointer;
 	font-size: 16px;
 	font-style: italic;
@@ -57,7 +58,7 @@ body {
 }
 
 #plane {
-	left: 75.4%;
+	left: 80%;
 	top: 35%;
 	position: absolute;
 	width: auto;
@@ -69,7 +70,7 @@ body {
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
     100% { transform: translateY(-80px); }
-}
+} 
 
 button:disabled,button[disabled]{
   	color: white;
