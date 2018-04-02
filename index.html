@@ -5,7 +5,7 @@
   <title>George Zhang</title>
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link href="https://fonts.googleapis.com/css?family=Bentham|Roboto|Playfair+Display" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:100" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -26,9 +26,43 @@
     </div>
     <br>
   </div>
-  <div class="imgs">
-    <img id="plane" src="thiqplane.png" alt="plane">
-  </div>
+  <button id="vroom" type="button"> vroom </button>
+  <img id="plane" src="thiqplane.png" alt="plane">
+  <script>
+  function move(e) {
+
+// return to original position
+    function goRight() {
+      $("#plane").css("left", "+=2200")
+      $("#plane").animate({
+        left: 1104
+      }, 2000);
+    }
+
+// go left and then run go right
+    function goLeft() {
+      $("#plane").animate({
+        left: -600
+      }, 5000, function() {
+        setTimeout(goRight, 50);
+      })
+      //setTimeout(goRight, 50);
+    }
+    dis()
+    setTimeout(goLeft, 50);
+  };
+
+// disable button
+  function dis() {
+    document.getElementById("vroom").disabled = true;
+    setTimeout(function() {
+      document.getElementById("vroom").disabled = false;
+    }, 7500);
+  }
+
+  document.getElementById("vroom").onclick = move;
+
+  </script>
 </body>
 
 </html>

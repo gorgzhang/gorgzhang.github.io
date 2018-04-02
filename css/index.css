@@ -40,56 +40,35 @@
 	text-align: right;
 }
 
-.imgs {
+
+body {
 	overflow: hidden;
-	height: 100%;
-	width: 100%;
+}
+
+#vroom {
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+	font-size: 16px;
+	font-style: italic;
+	border: none;
 	position: absolute;
+	left: 90%;
+	top: 65%;
 }
 
 #plane {
-	left: 65%;
-	top: 70%;
+	left: 1104px;
+	top: 35%;
 	position: absolute;
 	width: auto;
-	height: 80px;
+	height: 180px;
 	-webkit-animation: mover 2s infinite  alternate;
 }
 
-/*.clouds1 {
-	display: block;
-	position: absolute;
-	width: auto;
-	height: 250px;
-}
-
-#one {
-
-}
-
-#two {
-	visibility: hidden;
-	left: -40%;
-	top: 20%;
-}
-
-#three {
-		visibility: hidden;
-
-	left: -80%;
-	top: 50%;
-}
-
-#four {
-		visibility: hidden;
-
-	left: -120%;
-	top: 80%;
-}*/
 
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
-    100% { transform: translateY(-40px); }
+    100% { transform: translateY(-80px); }
 }
 
 a {
