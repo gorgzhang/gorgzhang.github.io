@@ -57,7 +57,7 @@ body {
 }
 
 #plane {
-	left: 1104px;
+	left: 75.4%;
 	top: 35%;
 	position: absolute;
 	width: auto;
@@ -69,6 +69,10 @@ body {
 @-webkit-keyframes mover {
     0% { transform: translateY(0); }
     100% { transform: translateY(-80px); }
+}
+
+button:disabled,button[disabled]{
+  	color: white;
 }
 
 a {

@@ -30,12 +30,13 @@
   <img id="plane" src="thiqplane.png" alt="plane">
   <script>
   function move(e) {
+  	var width = $(document).width();
 
     // return to original position
     function goRight() {
-      $("#plane").css("left", "+=2200")
+      $("#plane").css("left", "+=" + (width * 1.3).toString());
       $("#plane").animate({
-        left: 1104
+        left: width * .66
       }, 2000);
     }
 
