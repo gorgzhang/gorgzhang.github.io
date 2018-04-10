@@ -34,7 +34,16 @@
 	width: 100%;
 }
 
+#top {
+	display: none;
+}
+
+#bottom {
+	display: none;
+}
+
 #contact {
+	display: none;
 	right: 50px;
 	position: relative;
 	text-align: right;
@@ -46,6 +55,7 @@ body {
 }
 
 #vroom {
+	opacity: 0;
 	font-family: 'Roboto', sans-serif;
 	background-color: white;
 	cursor: pointer;
