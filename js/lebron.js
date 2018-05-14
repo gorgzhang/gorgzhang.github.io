@@ -6012,8 +6012,6 @@ cities = {
 	]
 }
 
-// cities.capitals[0].capital
-
 function getRandomCity() {
 	var randomCityIndex = Math.floor(Math.random() * 50)
 	var randomCity = cities.capitals[randomCityIndex].capital
@@ -6035,11 +6033,6 @@ function getRandomElement() {
 
 }
 
-for (var i = 0; i < 5; i++) {
-	console.log(getRandomElement())
-	console.log(getRandomCity())
-}
-
 function update() {
 	document.getElementById("nickname").innerHTML = getRandomElement();
 	document.getElementById("mascot").innerHTML = getRandomElement();
@@ -6049,36 +6042,3 @@ function update() {
 update()
 
 document.getElementById("generate-button").onclick = update;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
