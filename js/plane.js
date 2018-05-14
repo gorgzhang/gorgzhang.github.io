@@ -2,22 +2,22 @@ var width = $(document).width();
 
 // return to original position
 function goRight() {
-  $("#plane").css("left", "+=" + (width * 1.3).toString());
-  $("#plane").animate(
-    {
-      left: width * 0.66
-    },
-    2000
-  );
+  $("#plane").css("left", width * 0.7);
+  // $("#plane").animate(
+  //   {
+  //     left: width
+  //   },
+  //   2000
+  // );
 }
 
 // go left and then run go right
 function goLeft() {
   $("#plane").animate(
     {
-      left: -600
+      left: -(width * 0.8)
     },
-    5000,
+    7000,
     function() {
       setTimeout(goRight, 50);
     }
@@ -33,17 +33,22 @@ function move(e) {
 // disable button
 function dis() {
   document.getElementById("vroom").disabled = true;
+  setTimeout(fadeBack, 7200);
+}
+
+function fadeBack() {
+  unfade(document.getElementById("vroom"));
   setTimeout(function() {
     document.getElementById("vroom").disabled = false;
-  }, 7500);
+  }, 100);
 }
 
 document.getElementById("vroom").onclick = move;
 
-$("#plane").css("left", "+=" + (width * 0.3).toString());
-$("#plane").animate(
-  {
-    left: width * 0.66
-  },
-  2600
-);
+$("#plane").css("left", width * 0.7);
+// $("#plane").animate(
+//   {
+//     left: width * 0.01
+//   },
+//   2600
+// );
