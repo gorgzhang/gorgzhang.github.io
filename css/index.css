@@ -86,6 +86,9 @@ button:disabled,button[disabled]{
   	color: white;
 }
 
+button:focus {outline:0;}
+
+
 a {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
