@@ -1,120 +1,36 @@
-#rectangle {
-	position: absolute;
-	width: 30%;
-	height: 60%;
-	top: 15%;
-	left: 60%;
-	line-height: 1.35;
+.box {
+    margin: 0 auto;
+    margin-top: 180px;
+    width: 280px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
 }
-
-#top-right {
-	font-size: 20px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
-}
-
-#bottom-left {
-	position: absolute;
-	top: 17%;
-	font-size: 20px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
-}
-
-#project-header {
-	position: absolute;
-}
-
-.hundred_2 {
-	display: inline-block;
-	position: relative;
-	left: 20px;
-	color: #828282;
-}
-
-#orange-box {
-	position: relative;
-	top: -5px;
-	width: 60px;
-	height: 7px;
-	background-color: orange;
-}
-
-#name {
-	position: absolute;
-	right: 0%;
-}
-
-#berkeley {
-	color: #CCD1D1;
-	position: absolute;
-	right: 0%;
-}
-
-#links {
-	position: absolute;
-	right: 0%;
-}
-
-#vroom {
-	opacity: 0;
-	font-family: 'Open Sans', sans-serif;
-	background-color: white;
-	cursor: pointer;
-	font-size: 20px;
-	border: none;
-	position: absolute;
-	right: 0%;
-	bottom: 50%;
-	font-style: italic;
-	font-weight: bold;
-}
-
-#plane {
-	left: 80%;
-	top: 25%;
-	position: absolute;
-	width: auto;
-	height: 500px;
-	-webkit-animation: mover 2s infinite alternate;
-}
-
-
-@-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-80px); }
-} 
-
-button:disabled,button[disabled]{
-  	color: white;
-}
-
-button:focus {outline:0;}
-
-
-a {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: bold;
-	text-decoration: none;
-	color: inherit;
-}
-
-body {
-	overflow: hidden;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Dosis:300,400);
 
 .hundred {
 	position: relative;
 	width: 100%;
 }
 
-.test {
-	position: relative;
+a {
+	text-decoration: none;
+	color: black;
 }
 
-/*effect-underline*/
+ul {
+	list-style: none;
+	margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: circle;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+li:last-child {
+ margin-bottom: 0px;
+}
+
 a:after {
 	content: '';
 	position: absolute;
@@ -123,7 +39,7 @@ a:after {
 	width: 100%;
 	border-bottom: 1px solid;
 	opacity: 0;
-	margin-top: 5px;
+	margin-top: 2px;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: scale(0,1);
@@ -134,4 +50,19 @@ a:hover:after {
   opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
+}
+
+#vroom {
+	opacity: 1;
+	font-family: 'Open Sans', sans-serif;
+	background-color: white;
+	cursor: pointer;
+	font-size: 20px;
+	border: none;
+	padding: 0;
+}
+
+#email {
+	color: grey;
+	margin-top: 5px;
 }
