@@ -4,7 +4,7 @@
     width: 280px;
     font-size: 20px;
 	font-family: 'Open Sans', sans-serif;
-	font-weight: 100;
+	font-weight: 200;
 }
 
 .hundred {
@@ -66,4 +66,8 @@ a:hover:after {
 #email {
 	color: grey;
 	margin-top: 5px;
+}
+
+@media (max-width: 480px) {
+   .box {margin-top: 45px;}
 }
