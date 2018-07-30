@@ -1,9 +1,9 @@
 .box {
     margin: 0 auto;
-    left: 160px;
+    left: 130px;
     margin-top: 12%;
     width: 280px;
-    font-size: 20px;
+    font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 200;
 	position: relative;
@@ -57,7 +57,7 @@ a:hover:after {
 
 img {
 	height: 100%;
-	left: -320px;
+	left: -260px;
 	position: absolute;
 }
 
