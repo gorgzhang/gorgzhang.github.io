@@ -1,10 +1,12 @@
 .box {
     margin: 0 auto;
+    left: 160px;
     margin-top: 12%;
     width: 280px;
     font-size: 20px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 200;
+	position: relative;
 }
 
 .hundred {
@@ -53,6 +55,12 @@ a:hover:after {
 	transform: scale(1);
 }
 
+img {
+	height: 100%;
+	left: -320px;
+	position: absolute;
+}
+
 #vroom {
 	opacity: 1;
 	font-family: 'Open Sans', sans-serif;
@@ -63,11 +71,13 @@ a:hover:after {
 	padding: 0;
 }
 
-#email {
-	color: grey;
-	margin-top: 5px;
-}
-
 @media (max-width: 480px) {
-   .box {margin-top: 45px;}
+   .box {
+   	margin-top: 45px;
+   	 left: 0;
+   	}
+
+   img {
+   	display: none;
+   }
 }
