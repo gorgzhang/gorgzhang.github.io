@@ -1,79 +1,141 @@
 .box {
-    margin: 0 auto;
-    left: 130px;
-    margin-top: 12%;
-    width: 221px;
-    font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 200;
-	position: relative;
+  position: absolute;
+  overflow: hidden;
 }
 
-.hundred {
-	position: relative;
-	width: 100%;
+.box1 {
+  height: 100%;
+  width: 25%;
+}
+
+.box2 {
+  height: 100%;
+  width: 21.5%;
+  left: 25%;
+}
+
+.box3 {
+  height: 100%;
+  width: 31%;
+  left: 46.5%;
+}
+
+.box4 {
+  height: 100%;
+  width: 22.5%;
+  left: 77.5%;
+}
+
+.text {
+  opacity: 0;
+  position: absolute;
+  font-family: 'Metrophobic', sans-serif;
+  font-size: 14px;
+}
+
+#about-text {
+  width: 70%;
+  top: 30%;
+  left: 7%;
+}
+
+#links-text {
+  width: 70%;
+  left: 8.1%;
+  top: 17%;
+}
+
+#more-links-text {
+  top: 23%;
+  width: 85%;
+  left: 5.6%;
+}
+
+#contact-text {
+  top: 11%;
+  width: 70%;
+  left: 7.8%;
+}
+
+#my-name {
+  position: absolute;
+  font-family: 'Linden Hill', serif;
+  font-size: 24px;
+  bottom: 5%;
+  right: 5%;
+}
+
+.hor-line {
+  opacity: 0;
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  background-color: black;
+}
+
+.ver-line {
+  opacity: 0;
+  height: 1px;
+  position: absolute;
+  background-color: black; 
+}
+
+#about-line {
+  width: 80%;
+  left: 0;
+  top: 27%;
+}
+
+#links-line {
+  width: 70%;
+  left: 0;
+  top: 14%;
+}
+
+#more-links-line-left {
+  width: 70%;
+  right: -20%;
+  top: 20%;
+}
+
+
+#more-links-line-right {
+  width: 40%;
+  left: 0;
+  top: 20%;
+}
+
+#contact-line {
+  width: 70%;
+  right: 0;
+  top: 8%;
 }
 
 a {
-	text-decoration: none;
-	color: black;
-}
-
-ul {
-	list-style: none;
-	margin-top: 10px;
-    padding-left: 20px;
-    list-style-type: circle;
-}
-
-li {
-  margin-bottom: 5px;
-}
-
-li:last-child {
- margin-bottom: 0px;
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  color: black;
 }
 
 a:after {
-	content: '';
-	position: absolute;
-	left: 0;
-	height: 1em;
-	width: 100%;
-	border-bottom: 1px solid;
-	margin-top: 2px;
-	transition: opacity 0.35s, transform 0.35s;
-	transform: scale(0,1);
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 2px;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: scale(0,1);
 }
 
 a:hover:after {
- 	opacity: 1;
-	transform: scale(1);
+  opacity: 1;
+  transform: scale(1);
 }
 
-img {
-	height: 100%;
-	left: -260px;
-	position: absolute;
-}
-
-#vroom {
-	opacity: 1;
-	font-family: 'Open Sans', sans-serif;
-	background-color: white;
-	cursor: pointer;
-	font-size: 20px;
-	border: none;
-	padding: 0;
-}
-
-@media (max-width: 480px) {
-   .box {
-   	margin-top: 45px;
-   	 left: 0;
-   	}
-
-   img {
-   	display: none;
-   }
+body {
+  margin: 0;
 }
