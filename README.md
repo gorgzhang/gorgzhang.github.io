@@ -4,6 +4,8 @@ Major Update 1: 5/14/18
 
 Major Update 2: 6/23/18
 
+Major Update 3: 12/22/18
+
 View old website code in the old folder
 
 Assorted Projects Hosted (Replace . with gorgzhang.github.io):
