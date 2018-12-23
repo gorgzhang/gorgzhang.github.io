@@ -1,6 +1,7 @@
 var night = 0;
 var width = $(document).width();
 var height = $(document).height();
+var scale = 200;
 
 function getStartingLocation(direction) {
 	if (direction == "left") {
@@ -87,7 +88,7 @@ function nightMode() {
 	$("#my-name").css("color", "white");
 	$(".ver-line").css("background-color", "white");
 	$(".hor-line").css("background-color", "white");
-	$(".box").animate({backgroundColor: "black"}, 1500);
+	$(".box").animate({backgroundColor: "black"}, scale * 6);
 }
 
 function dayMode() {
@@ -95,7 +96,7 @@ function dayMode() {
 	$("#my-name").css("color", "black");
 	$(".ver-line").css("background-color", "black");
 	$(".hor-line").css("background-color", "black");
-	$(".box").animate({backgroundColor: "white"}, 1500);
+	$(".box").animate({backgroundColor: "white"}, scale * 6);
 }
 
 function swapMode() {
@@ -106,9 +107,9 @@ function swapMode() {
 		document.getElementById("night-off").onclick = null;
 		$("#night-off").css("z-index", -1);
 		window.setTimeout(function () {
-			$("#night-on").animate({opacity: 1}, 1500);
+			$("#night-on").animate({opacity: 1}, scale * 6);
 			$("#night-on").css("z-index", 1);
-		}, 3000);
+		}, scale * 12);
 
 		window.setTimeout(function () {document.getElementById("night-on").onclick = swapMode;}, 4550);
 		nightMode();
@@ -117,9 +118,9 @@ function swapMode() {
 		document.getElementById("night-on").onclick = null;
 		$("#night-on").css("z-index", -1);
 		window.setTimeout(function () {
-			$("#night-off").animate({opacity: 1}, 1500);
+			$("#night-off").animate({opacity: 1}, scale * 6);
 			$("#night-off").css("z-index", 1);
-		}, 3000);
+		}, scale * 12);
 
 		window.setTimeout(function () {document.getElementById("night-off").onclick = swapMode;}, 4550);
 		dayMode();
@@ -134,25 +135,25 @@ function loadLines() {
 
 	// Make text disappear while loading lines
 	window.setTimeout(function () {
-		$(".text").animate({opacity: 1}, 1500);
-	}, 3000);
+		$(".text").animate({opacity: 1}, scale * 6);
+	}, scale * 12);
 
 
 	// Vertical Lines
-	window.setTimeout(function () {move("#box1-line", "down", -.1, 0, 1500, height);} ,1000);
-	window.setTimeout(function () {move("#box2-line", "up", -.1, 0, 1500, height);} , 0);
-	window.setTimeout(function () {move("#box3-line", "down", -.1, 0, 1500, height);} ,500);
+	window.setTimeout(function () {move("#box1-line", "down", -.1, 0, scale * 6, height);}, scale * 4);
+	window.setTimeout(function () {move("#box2-line", "up", -.1, 0, scale * 6, height);} , 0);
+	window.setTimeout(function () {move("#box3-line", "down", -.1, 0, scale * 6, height);}, scale * 2);
 
 	// Horizonatal Lines
-	window.setTimeout(function () {move("#about-line", "right", -.1, 0, 1500, width * .25);} ,1250);
-	window.setTimeout(function () {move("#links-line", "right", -.1, 0, 1500, width * .215);} ,1000);
-	window.setTimeout(function () {move("#more-links-line-left", "left", -.1, 0, 1500, width * .25);} ,1500);
-	window.setTimeout(function () {move("#more-links-line-right", "right", -.1, 0, 1500, width * .25);} ,1500);
-	window.setTimeout(function () {move("#contact-line", "left", -.1, 0, 1500, width * .25);} , 2000);
+	window.setTimeout(function () {move("#about-line", "right", -.1, 0, scale * 6, width * .25);}, scale * 5);
+	window.setTimeout(function () {move("#links-line", "right", -.1, 0, scale * 6, width * .215);}, scale * 4);
+	window.setTimeout(function () {move("#more-links-line-left", "left", -.1, 0, scale * 6, width * .25);}, scale * 6);
+	window.setTimeout(function () {move("#more-links-line-right", "right", -.1, 0, scale * 6, width * .25);}, scale * 6);
+	window.setTimeout(function () {move("#contact-line", "left", -.1, 0, scale * 6, width * .25);} , scale * 8);
 }
 
 function loadNightBoxes() {
-	var boxLength = width * .25 * .07;
+	var boxLength = Math.max(width * .25 * .05, height * .02);
 	$("#night-on").css("width", boxLength);
 	$("#night-on").css("height", boxLength);
 	$("#night-off").css("width", boxLength);
@@ -164,9 +165,9 @@ function onLoad() {
 	loadNightBoxes();
 
 	window.setTimeout(function () {
-		$("#night-off").animate({opacity: 1}, 1500);
-	}, 3000);
-	window.setTimeout(function () {document.getElementById("night-off").onclick = swapMode;}, 4550);
+		$("#night-off").animate({opacity: 1}, scale * 6);
+	}, scale * 12);
+	window.setTimeout(function () {document.getElementById("night-off").onclick = swapMode;}, scale * 18 + 50);
 }
 
 onLoad();
