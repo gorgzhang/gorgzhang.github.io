@@ -34,13 +34,7 @@ function move(id, direction, startPercent, endPercent, duration, offsetSize) {
 	start = getStartingLocation(direction);
 	$(id).css(start, startPercent * offsetSize * 10);
 	$(id).css("opacity", 1);
-	console.log("id: ", id);
-	console.log("direction: ", direction);
-	console.log("start: ", start);
-	console.log("startPercent: ", startPercent);
-	console.log("offsetSize", offsetSize);
 	moveDirection(id, direction, endPercent, width, duration);
-	console.log("done moving");
 }
 
 function moveRight(id, endPercent, offsetSize, duration) {
@@ -77,11 +71,6 @@ function moveDown(id, endPercent, offsetSize, duration) {
 	  },
 	  duration
 	);
-
-	console.log("id: ", id);
-	console.log("endPercent: ", endPercent);
-	console.log("offsetSize", offsetSize);
-	console.log("offsetSize", duration);
 }
 
 
