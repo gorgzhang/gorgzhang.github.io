@@ -1,4 +1,4 @@
-var night = 0;
+var night = 1;
 var width = $(document).width();
 var height = $(document).height();
 var scale = 200;
@@ -165,9 +165,9 @@ function onLoad() {
 	loadNightBoxes();
 
 	window.setTimeout(function () {
-		$("#night-off").animate({opacity: 1}, scale * 6);
+		$("#night-on").animate({opacity: 1}, scale * 6);
 	}, scale * 12);
-	window.setTimeout(function () {document.getElementById("night-off").onclick = swapMode;}, scale * 18 + 50);
+	window.setTimeout(function () {document.getElementById("night-on").onclick = swapMode;}, scale * 18 + 50);
 }
 
 onLoad();
