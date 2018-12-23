@@ -1,5 +1,4 @@
 .box {
-  background-color: black;
   position: absolute;
   overflow: hidden;
 }
@@ -28,7 +27,6 @@
 }
 
 .text {
-  color: white;
   position: absolute;
   font-family: 'Metrophobic', sans-serif;
   font-size: 14px;
@@ -59,7 +57,6 @@
 }
 
 #my-name {
-  color: white;
   position: absolute;
   font-family: 'Linden Hill', serif;
   font-size: 24px;
@@ -84,17 +81,17 @@
 }
 
 .hor-line {
-  background-color: white;
   height: 100%;
   width: 1px;
   position: absolute;
   right: 0;
+  background-color: black;
 }
 
 .ver-line {
-  background-color: white;
   height: 1px;
   position: absolute;
+  background-color: black; 
 }
 
 #about-line {
