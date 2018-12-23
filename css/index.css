@@ -66,16 +66,16 @@
 
 #night-on {
   position: absolute;
-  top: 3%;
-  left: 7%;
+  top: 55%;
+  left: 75%;
   background-color: white;
   color: black;
 }
 
 #night-off {
   position: absolute;
-  top: 3%;
-  left: 7%;
+  top: 55%;
+  left: 75%;
   background-color: black;
   color: white;
 }
