@@ -27,7 +27,6 @@
 }
 
 .text {
-  opacity: 0;
   position: absolute;
   font-family: 'Metrophobic', sans-serif;
   font-size: 14px;
@@ -65,8 +64,21 @@
   right: 5%;
 }
 
+#night-on {
+  position: absolute;
+  top: 3%;
+  left: 7%;
+  background-color: white;
+}
+
+#night-off {
+  position: absolute;
+  top: 3%;
+  left: 7%;
+  background-color: black;
+}
+
 .hor-line {
-  opacity: 0;
   height: 100%;
   width: 1px;
   position: absolute;
@@ -75,7 +87,6 @@
 }
 
 .ver-line {
-  opacity: 0;
   height: 1px;
   position: absolute;
   background-color: black; 
@@ -115,7 +126,6 @@
 a {
   cursor: crosshair;
   position: relative;
-  width: 100%;
   text-decoration: none;
   color: black;
 }
