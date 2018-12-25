@@ -64,20 +64,28 @@
   right: 5%;
 }
 
-#night-on {
+.night {
   position: absolute;
   top: 3%;
   left: 7%;
+}
+
+#night-on {
   background-color: white;
-  color: black;
 }
 
 #night-off {
-  position: absolute;
-  top: 3%;
-  left: 7%;
   background-color: black;
-  color: white;
+}
+
+#night-on-small-box {
+  position: absolute;
+  background-color: black;
+}
+
+#night-off-small-box {
+  position: absolute;
+  background-color: white;
 }
 
 .hor-line {

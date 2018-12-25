@@ -156,8 +156,19 @@ function loadNightBoxes() {
 	var boxLength = Math.max(width * .25 * .05, height * .02);
 	$("#night-on").css("width", boxLength);
 	$("#night-on").css("height", boxLength);
+
 	$("#night-off").css("width", boxLength);
 	$("#night-off").css("height", boxLength);
+
+	$("#night-on-small-box").css("height", boxLength-2);
+	$("#night-on-small-box").css("width", boxLength-2);
+	$("#night-on-small-box").css("top", 1);
+	$("#night-on-small-box").css("left", 1);
+
+	$("#night-off-small-box").css("height", boxLength-2);
+	$("#night-off-small-box").css("width", boxLength-2);
+	$("#night-off-small-box").css("top", 1);
+	$("#night-off-small-box").css("left", 1);
 }
 
 function onLoad() {
