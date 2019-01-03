@@ -1,3 +1,5 @@
+// Animations for version 12-22-18
+
 var night = 0;
 var width = $(document).width();
 var height = $(document).height();
@@ -35,7 +37,7 @@ function moveDirection(id, direction, endPercent, offsetSize, duration) {
 function move(id, direction, startPercent, endPercent, duration, offsetSize) {
 	start = getStartingLocation(direction);
 	$(id).css(start, startPercent * offsetSize * 10);
-	moveDirection(id, direction, endPercent, width, duration);
+	moveDirection(id, direction, endPercent, offsetSize, duration);
 	$(id).css("opacity", 1);
 }
 
