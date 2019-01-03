@@ -1,10 +1,8 @@
 First Created: 3/27/18
 
-Major Update 1: 5/14/18
+v3: 12/22/18 (./12-22-18.html)
 
-Major Update 2: 6/23/18
-
-Major Update 3: 12/22/18
+v4: 1/2/18 (current)
 
 View old website code in the old folder
 
