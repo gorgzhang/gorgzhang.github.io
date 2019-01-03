@@ -158,7 +158,7 @@ function turnOnHover() {
 }
 
 setColors();
-move("#black-box", "left", -1, 0, scale * 6, width);
+move("#black-box", "right", -1, 0, scale * 6, width);
 turnOnHover();
 
 
