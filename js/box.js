@@ -99,24 +99,6 @@ function moveLeft(id, endPercent, offsetSize, duration) {
 	);
 }
 
-function moveUp(id, endPercent, offsetSize, duration) {
-	$(id).animate(
-	  {
-	    bottom: endPercent * offsetSize
-	  },
-	  duration
-	);
-}
-
-function moveDown(id, endPercent, offsetSize, duration) {
-	$(id).animate(
-	  {
-	    top: endPercent * offsetSize
-	  },
-	  duration
-	);
-}
-
 function move(id, direction, startPercent, endPercent, duration, offsetSize) {
 	start = getStartingLocation(direction);
 	$(id).css(start, startPercent * offsetSize);
