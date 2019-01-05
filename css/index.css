@@ -1,17 +1,11 @@
 .box {
   position: absolute;
-  height: 10%;
-  width: 100%;
-  background-color: white;
-  opacity: 0;
-  z-index: 0;
-}
-
-.rest {
-  position: absolute;
   height: 100%;
-  width: 100%;
-  background-color: black;
+  width: 15px;
+  opacity: 0;
+  z-index: -1;
+  top: 29%;
+  background-color: #767676;
 }
 
 #black-box {
@@ -19,14 +13,15 @@
 }
 
 .text-chunk {
-  color: white;
   position: absolute;
   width: 92%;
   left: 4%;
-  top: 15%;
+  top: 3%;
   font-family: 'Metrophobic', sans-serif;
-  font-size: 44px;
+  font-size: 20px;
   line-height: 135%;
+  color: black;
+  z-index: 5000;
 }
 
 .sup {
@@ -49,8 +44,11 @@ body {
 @media (max-width: 480px) {
   .text-chunk {
     font-size: 20px;
+    width: 92%;
+    left: 4%;
+    top: 5%;
   }
-  .hover-text {
+  .box {
     display: none;
   }
 }

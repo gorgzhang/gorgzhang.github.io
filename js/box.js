@@ -99,6 +99,25 @@ function moveLeft(id, endPercent, offsetSize, duration) {
 	);
 }
 
+function moveUp(id, endPercent, offsetSize, duration) {
+	$(id).animate(
+	  {
+	    bottom: endPercent * offsetSize
+	  },
+	  duration
+	);
+}
+
+function moveDown(id, endPercent, offsetSize, duration) {
+	$(id).animate(
+	  {
+	    top: endPercent * offsetSize
+	  },
+	  duration
+	)
+}
+
+
 function move(id, direction, startPercent, endPercent, duration, offsetSize) {
 	start = getStartingLocation(direction);
 	$(id).css(start, startPercent * offsetSize);
@@ -108,7 +127,6 @@ function move(id, direction, startPercent, endPercent, duration, offsetSize) {
 
 function incrementZ(id) {
 	var z = $(id).css("z-index");
-	console.log("Z is ", z);
 	if (z < currentZ) {
 		$(id).css("z-index", currentZ + 1);
 		currentZ += 1;
@@ -120,7 +138,7 @@ function moveColorBox(id, color, duration) {
 	var boxId = id + "-box";
 	$(boxId).css("background-color", color);
 	incrementZ(boxId);
-	move(boxId, "right", -1, 0, duration, width);
+	move(boxId, "down", -.5, 0, duration, width);
 	window.setTimeout(function() {
 		$(id).mouseenter(function() {moveColorBox(id, getColor(id), scale * 6);});
 	}, duration + 50);
@@ -140,19 +158,5 @@ function turnOnHover() {
 }
 
 setColors();
-move("#black-box", "right", -1, 0, scale * 6, width);
+move("#black-box", "down", -.5, 0, scale * 6, width);
 turnOnHover();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
