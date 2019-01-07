@@ -1,7 +1,7 @@
 var currSongs;
 
 function getRecentTracks(limit) {
-    $.getJSON("http://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=curiousgorg&api_key=7e94f6bc8a09e1fc8b2c72965e7abfdc&limit=" + limit + "&format=json", function(json) {
+    $.getJSON("https://ws.audioscrobbler.com/2.0/?method=user.getRecentTracks&user=curiousgorg&api_key=7e94f6bc8a09e1fc8b2c72965e7abfdc&limit=" + limit + "&format=json", function(json) {
         var html = "<ul>";
         console.log(json.recenttracks);
         $.each(json.recenttracks.track, function(i, item) {
