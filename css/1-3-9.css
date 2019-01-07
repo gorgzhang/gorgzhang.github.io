@@ -1,0 +1,56 @@
+.box {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  opacity: 0;
+  z-index: 0;
+}
+
+.rest {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+#black-box {
+  opacity: 1;
+}
+
+.text-chunk {
+  color: white;
+  position: absolute;
+  width: 92%;
+  left: 4%;
+  top: 15%;
+  font-family: 'Metrophobic', sans-serif;
+  font-size: 44px;
+  line-height: 135%;
+}
+
+.sup {
+  vertical-align: super;
+  line-height: 0;
+  font-size: 0.83em;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  cursor: default;
+  overflow: hidden;
+}
+
+@media (max-width: 480px) {
+  .text-chunk {
+    font-size: 20px;
+  }
+  .hover-text {
+    display: none;
+  }
+}
