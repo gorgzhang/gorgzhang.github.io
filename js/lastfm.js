@@ -27,13 +27,15 @@ $("#more-button").click(function() {
     currSongs + 
     '<p></p>' + 
 
-    'The best movies I’ve ever seen are: ' + 
+    'My current top movies are: ' + 
     '<ul>' + 
         '<li><a href="https://www.youtube.com/watch?v=c3sBBRxDAqk" target="_blank">Ratatouille</a> (2007)</li>' + 
         '<li><a href="https://www.youtube.com/watch?v=ijXruSzfGEc" target="_blank">The Prestige</a> (2006)</li>' + 
         '<li>with Crazy Rich Asians (2018) and Into the Spider-Verse (2018) on the come-up</li>' + 
     '</ul>' + 
-    '<p></p>'
+    '<p></p>' + 
+    "<p>Here's a picture of me:</p>" + 
+    '<img src="9637.jpg">'
     );
 })
 
