@@ -1,7 +1,11 @@
-.about {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  padding-bottom: 70px;
-  font-family: 'Open Sans', sans-serif;
+#block {
+	height: 100px;
+}
+
+img {
+	height: 300px;
+	width: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
