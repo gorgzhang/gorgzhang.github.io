@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>  
+    div.padded {  
+      padding-top: 0px;  
+      padding-right: 300px;  
+      padding-bottom: 0.25in;  
+      padding-left: 300px;  
+    }  
+  td {
+    vertical-align: top;
+  }
+  </style> 
+<title>Smoke Simulations</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<br />
+<h1 align="middle">Final Project Smoke Simulations</h1>
+
+  	<p>
+  		<ul align="middle" style="list-style-type:none;">
+      	<li>Kyle Tse, 3032139280, tsekylekobie</li>
+      	<li>Jonathan Liu, 3032172469, liujon23</li>
+      	<li>Michael Hillsman, 3032694134, mhillsman-162</li>
+      	<li>George Zhang, 3031861392, gorgzhang</li>
+  		</ul>
+  	</p>
+  	
+  
+  	<h2 align="middle">Summary</h2>
+    <div class="padded">
+        <p>
+					In this project, we’ll be utilizing the Navier-Stokes equations to simulate an incompressible and homogeneous fluid. In particular, we’ll be attempting to simulate smoke with features including adjustable variables and the ability to add objects into the simulation.
+      	</p>
+    </div>
+    
+
+    <h2 align="middle">Problem Description</h2>
+  	<div class="padded">
+		<p>
+      From cigarette butts to a campfire, the need to be able to render and simulate smoke is extremely prominent. We’ll be providing a sandbox environment that simulates smoke. The smoke will be outputted from either the mouse cursor or given points set by the user. The sandbox will also contain many adjustable variables including pressure, temperature, and vorticity, that we’ll be able to adjust and see the resulting effect on the smoke. On top of that, our sandbox will have a feature that allows for the placement of objects inside the frame. We’ll then simulate how the smoke bounces or wraps around these objects. The simulation will revolve around the Navier-Stokes equations and will be utilizing the frameworks three.js and WebGL. 
+  </p>
+  </div>
+    <div align="center">
+        <p></p>
+        
+    </div>
+        
+        
+
+
+    <h2 align="middle">Goals and Deliverables</h2>
+  		<h3 align="middle">What we plan to deliver</h3>
+        <div class="padded">
+					<p>In order to have a successful project, we plan on delivering a demo that can generate an accurate simulation of smoke within a controlled system. This demo will allow the user to input smoke into the system and see how it interacts with itself and eventually fades. We also plan to deliver an analysis of the concessions that must be made in order to make the demo run effectively. That is, our analysis will concern the balance between an ideally realistic simulation and one that is computationally simple enough to produce within the context of a demo that is actively running instead of being pre-computed, as would be the case with a render. We plan on accomplishing this by using the Navier-Stokes equations to create an interactive web application primarily powered by JavaScript frameworks and WebGL.</p>
+        </div>
+  		<h3 align="middle">What we hope to deliver</h3>
+        <div class="padded">
+          <p>	The implementation by Jos Stam of smoke shaders that we plan to follow prioritizes computational speed over physical accuracy, which is ideal for demos and games but may miss some aspects of smoke’s real-world behavior. We hope to implement a modified algorithm that better models real-world behavior in order to compare the two and potentially suggest improvements to Stam’s implementation that account for these inaccuracies. We also hope to implement the ability to add physical objects and forces into the scene. For instance, we would like the user to be able to add fans or solid objects with which the smoke can interact and have differing effects given the nature of the object. 
+					</p>
+        </div>
+        
+    
+    <h2 align="middle"> Schedule </h2>
+    <table align="center">
+      <tr>
+        <th>Deadlines</th>
+        <th>Tasks to do</th>
+      </tr>
+    <tr>
+      <td><br>4/14</td>
+      <td>
+        <ul>
+          <li>Read papers, familiarize ourselves with WebGL and Three.js</li>
+          <li>Begin to write material for “technical approach” section of final webpage</li>
+        </ul>
+			</td>
+    </tr>
+    <tr>
+      <td><br>4/21</td>
+      <td>
+        <ul>
+          <li>Implement basic physics rules</li>
+          <li>Able to simulate basic levels of smoke</li>
+          <li>UI</li>
+        </ul>
+			</td>
+    </tr>
+    <tr>
+      <td><br>4/28</td>
+      <td>
+        <ul>
+          <li>Able to add variables that affect smoke simulation
+          	<ul>
+              <li>Including but not limited to: temperature, pressure, vorticity</li>
+            </ul>
+          </li>
+        </ul>
+			</td>
+    </tr>
+      
+      
+    <tr>
+      <td><br>5/7: Final Presentations!</td>
+      <td>
+        <ul>
+          <li>Finish demo</li>
+          <li>Add physical objects + forces into the scene
+            <ul>
+              <li>Control fans to move the fluid</li>
+          		<li>Add objects to block the fluid</li>
+          		<li>Add a fire to constantly generate smoke</li>
+            </ul>
+          </li>
+        </ul>
+			</td>
+    </tr>
+      
+      
+    <tr>
+      <td><br>5/12: Final Project Due</td>
+      <td>
+        <ul>
+          <li>Optimize to be more accurate, without losing too much computational speed</li>
+          <li>Final Project Video</li>
+          <li>Final Project Webpage
+            <ul>
+              <li>Write Abstract</li>
+          		<li>Compile technical approach</li>
+          		<li>Compile results</li>
+          		<li>References</li>
+              <li>Contributions by each team member</li>
+            </ul>
+          </li>
+        </ul>
+			</td>
+    </tr>
+      
+    </tr>
+    </table>
+  
+  	<h2 align="middle"> References </h2>
+		
+		<div align="center" class="padding" style="list-style-type:none;">
+      
+        <a href="http://developer.download.nvidia.com/books/HTML/gpugems/gpugems_ch38.html">Fast Fluid Simulation by Nvidia</a><br>
+        <a href="https://gamedevelopment.tutsplus.com/tutorials/how-to-write-a-smoke-shader--cms-25587">How to Write a Smoke Shader</a><br>
+        <a href="http://www.csc.kth.se/~mathar/fluids-2d/">Fluids Dynamics Example</a><br>
+        <a href="https://pdfs.semanticscholar.org/847f/819a4ea14bd789aca8bc88e85e906cfc657c.pdf">Real-Time Fluid Dynamics for Games by Jos Stam</a><br>
+        <a href="http://www.cse.chalmers.se/edu/year/2015/course/TDA361/Advanced%20Computer%20Graphics/GpuGems-FluidDynamics.pdf">Fast Fluid Dynamics Simulation on the GPU by Mark Harris</a><br>
+		</div>
+
+
+  
+  	
+</body>
+</html>
+
+
+
+
+	
