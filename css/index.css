@@ -2,10 +2,64 @@
 	height: 100px;
 }
 
+#container {
+	width: 60%;
+	display: flex;
+	margin: auto;
+}
+
+#left {
+	width: 50%;
+}
+
+#text {
+	position: absolute;
+	margin-left: 5%;
+	margin-top: 9%;
+	font-size: 2vw;
+	font-family: 'Inconsolata', monospace;
+}
+
+#right {
+	width: 50%;
+}
+
 img {
-	height: 300px;
-	width: auto;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
+}
+
+a {
+	color: grey;
+	text-decoration: none;
+}
+
+@media only screen and (max-device-width: 600px) {
+	#left {
+		width: 100%;
+		height: 50px;
+	}
+
+	#right {
+		width: 100%;
+	}
+
+	#container {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	#text {
+		font-size: 6vw;
+		position: block;
+		margin-left: 10%;
+		margin-top: 0;
+	}
+
+	#block {
+		height: 40px;
+	}
+
+	img {
+		width: 100%
+	}
 }
